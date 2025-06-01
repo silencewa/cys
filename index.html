@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPilates - 首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航 -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center">
+            <h1 class="text-2xl font-bold text-emerald-600">FitPilates</h1>
+            <div class="ml-auto flex space-x-4">
+                <a href="#" class="text-gray-600"><i class="fas fa-bell"></i></a>
+                <a href="profile.html" class="text-gray-600"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 功能入口网格 -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-2 gap-5">
+            <!-- 每日训练 -->
+            <a href="plan.html" class="group bg-white rounded-3xl p-7 shadow-lg transition-all hover:shadow-xl hover:-translate-y-1">
+                <div class="text-emerald-600 text-4xl mb-5 transition-colors group-hover:text-emerald-700">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-2.5 text-gray-800">每日训练计划</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">定制你的个性化每日训练方案</p>
+                <div class="mt-4 h-1 bg-emerald-100 rounded-full overflow-hidden">
+                    <div class="w-3/4 h-full bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
+                </div>
+            </a>
+
+            <!-- 课程库 -->
+            <a href="courses.html" class="bg-white rounded-2xl p-6 shadow-sm transition hover:shadow-md">
+                <div class="text-purple-600 text-3xl mb-4"><i class="fas fa-dumbbell"></i></div>
+                <h2 class="text-lg font-semibold mb-2">专业课程库</h2>
+                <p class="text-gray-500 text-sm">100+ 专业普拉提训练课程</p>
+            </a>
+
+            <!-- 训练数据 -->
+            <a href="stats.html" class="bg-white rounded-2xl p-6 shadow-sm transition hover:shadow-md">
+                <div class="text-blue-600 text-3xl mb-4"><i class="fas fa-chart-line"></i></div>
+                <h2 class="text-lg font-semibold mb-2">训练数据分析</h2>
+                <p class="text-gray-500 text-sm">全面追踪你的训练成果</p>
+            </a>
+
+            <!-- 社区互动 -->
+            <a href="community.html" class="bg-white rounded-2xl p-6 shadow-sm transition hover:shadow-md">
+                <div class="text-pink-600 text-3xl mb-4"><i class="fas fa-users"></i></div>
+                <h2 class="text-lg font-semibold mb-2">健身社区</h2>
+                <p class="text-gray-500 text-sm">与全球学员互动交流</p>
+            </a>
+        </div>
+    </main>
+
+    <!-- 底部导航 -->
+    <div class="fixed bottom-0 w-full bg-white border-t">
+        <div class="max-w-4xl mx-auto px-4 py-3 grid grid-cols-4">
+            <a href="index.html" class="text-center text-emerald-600">
+                <i class="fas fa-home block text-xl"></i>
+                <span class="text-xs mt-1">首页</span>
+            </a>
+            <a href="plan.html" class="text-center text-gray-500">
+                <i class="fas fa-calendar block text-xl"></i>
+                <span class="text-xs mt-1">计划</span>
+            </a>
+            <a href="courses.html" class="text-center text-gray-500">
+                <i class="fas fa-dumbbell block text-xl"></i>
+                <span class="text-xs mt-1">课程</span>
+            </a>
+            <a href="profile.html" class="text-center text-gray-500">
+                <i class="fas fa-user block text-xl"></i>
+                <span class="text-xs mt-1">我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

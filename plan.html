@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPilates - 训练计划</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- 顶部导航 -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex items-center">
+            <h1 class="text-2xl font-bold text-emerald-600">FitPilates</h1>
+            <div class="ml-auto flex space-x-4">
+                <a href="#" class="text-gray-600"><i class="fas fa-plus"></i></a>
+                <a href="profile.html" class="text-gray-600"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 计划主体 -->
+    <main class="max-w-4xl mx-auto px-4 py-6">
+        <!-- 周计划概览 -->
+        <div class="bg-white rounded-2xl p-5 shadow-lg mb-6">
+            <div class="flex items-center justify-between mb-5">
+                <h2 class="text-xl font-bold text-gray-800">本周训练计划</h2>
+                <div class="flex items-center">
+                    <span class="text-sm text-emerald-600 mr-3">完成度 80%</span>
+                    <div class="w-20 bg-emerald-100 rounded-full h-2">
+                        <div class="bg-gradient-to-r from-emerald-400 to-emerald-600 h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-7 gap-2">
+                <div class="text-center py-2 rounded-xl bg-emerald-50 text-emerald-700 font-medium border-2 border-emerald-100">周一</div>
+                <div class="text-center py-2 rounded-xl bg-gray-50 text-gray-600 border-2 border-gray-100">周二</div>
+                <div class="text-center py-2 rounded-xl bg-emerald-50 text-emerald-700 font-medium border-2 border-emerald-100">周三</div>
+                <div class="text-center py-2 rounded-xl bg-gray-50 text-gray-600 border-2 border-gray-100">周四</div>
+                <div class="text-center py-2 rounded-xl bg-emerald-50 text-emerald-700 font-medium border-2 border-emerald-100">周五</div>
+                <div class="text-center py-2 rounded-xl bg-gray-50 text-gray-600 border-2 border-gray-100">周六</div>
+                <div class="text-center py-2 rounded-xl bg-gray-50 text-gray-600 border-2 border-gray-100">周日</div>
+            </div>
+        </div>
+
+        <!-- 今日训练 -->
+        <div class="bg-white rounded-2xl p-5 shadow-lg hover:shadow-xl transition-all">
+            <h2 class="text-xl font-bold text-gray-800 mb-5">今日推荐训练</h2>
+            <div class="flex items-center gap-5 mb-5 group">
+                <div class="relative overflow-hidden w-24 h-24 rounded-xl flex-shrink-0">
+                    <img src="https://source.unsplash.com/600x400/?pilates,morning" 
+                         class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/20 to-transparent"></div>
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">晨间唤醒训练</h3>
+                    <div class="flex items-center text-sm text-gray-600 space-x-3">
+                        <span class="inline-flex items-center">
+                            <i class="fas fa-clock text-emerald-600 mr-1.5"></i>20分钟
+                        </span>
+                        <span class="text-gray-300">|</span>
+                        <span class="inline-flex items-center">
+                            <i class="fas fa-fire text-orange-500 mr-1.5"></i>初级
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <button class="w-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-white py-4 rounded-xl font-semibold 
+                      hover:shadow-lg transition-all hover:-translate-y-0.5">
+                <i class="fas fa-play mr-2"></i>立即开始训练
+            </button>
+        </div>
+    </main>
+
+    <!-- 底部导航 -->
+    <div class="fixed bottom-0 w-full bg-white border-t">
+        <div class="max-w-4xl mx-auto px-4 py-3 grid grid-cols-4">
+            <a href="index.html" class="text-center text-gray-500">
+                <i class="fas fa-home block text-xl"></i>
+                <span class="text-xs mt-1">首页</span>
+            </a>
+            <a href="plan.html" class="text-center text-emerald-600">
+                <i class="fas fa-calendar block text-xl"></i>
+                <span class="text-xs mt-1">计划</span>
+            </a>
+            <a href="courses.html" class="text-center text-gray-500">
+                <i class="fas fa-dumbbell block text-xl"></i>
+                <span class="text-xs mt-1">课程</span>
+            </a>
+            <a href="profile.html" class="text-center text-gray-500">
+                <i class="fas fa-user block text-xl"></i>
+                <span class="text-xs mt-1">我的</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
